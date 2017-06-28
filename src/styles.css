@@ -1,0 +1,100 @@
+body {
+  overflow-x: hidden;
+}
+
+.wrapper-login {
+  background: #945699;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.wrapper-login .mat-input-container {
+  width: 100%;
+}
+
+.wrapper-login form {
+  width: 400px;
+}
+
+.wrapper-home {
+  background: #945699;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-home .home-header {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 125px;
+}
+
+.wrapper-home .home-header span {
+  text-decoration: underline;
+}
+
+.wrapper-home .quick-menu {
+  font-size: 25px;
+  width: 80%;
+}
+
+.wrapper-home .wrapper-home-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper-home ul li {
+  list-style: none;
+  height: 330px;
+  width: 260px;
+  color: white;
+}
+
+.wrapper-home ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper-home ul li figure {
+  margin: 20px 0 35px;
+}
+
+.wrapper-home ul li img {
+  border-radius: 100%;
+}
+
+.wrapper-home .nav-quick-menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.wrapper-administration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.wrapper-administration .admin-navigation {
+  width: 250px;
+  border: 2px solid #000;
+  height: 99%;
+}
+
+.wrapper-administration .admin-navigation .admin-navigation-block {
+  border-bottom: 2px solid #000;
+  padding-left: 15px;
+}
