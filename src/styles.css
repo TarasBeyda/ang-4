@@ -59,6 +59,12 @@ body {
   margin: auto;
 }
 
+.site-header .sidenav-admin {
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+}
+
 .site-header .hr-under-sidenav hr {
   width: 90%;
   border-color: #000;
@@ -151,7 +157,7 @@ body {
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0;
+  top: 64px;
   display: flex;
 }
 
@@ -187,7 +193,7 @@ body {
   width: 100%;
 }
 
-.wrapper-preferences {
+.wrapper-admin-child {
   border: 2px solid #000000;
   border-left: 0;
   display: flex;
@@ -196,36 +202,36 @@ body {
   height: 100%;
 }
 
-.wrapper-preferences .title-preference {
+.wrapper-admin-child .title-preference {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0 15px;
 }
 
-.wrapper-preferences .title-preference img {
+.wrapper-admin-child .title-preference img {
   border-radius: 100%;
   margin-left: 50px;
 }
 
-.wrapper-preferences .inf-preference {
+.wrapper-admin-child .inf-preference {
   display: flex;
   justify-content: center;
   font-size: 20px;
   margin: 10px 0 30px;
 }
 
-.wrapper-preferences .inf-preference .inf-preference-left {
+.wrapper-admin-child .inf-preference .inf-preference-left {
   text-align: right;
   margin-right: 30px;
 }
 
-.wrapper-preferences .inf-preference .inf-preference-right {
+.wrapper-admin-child .inf-preference .inf-preference-right {
   text-align: left;
 }
 
-.wrapper-preferences .inf-preference .inf-preference-left p,
-.wrapper-preferences .inf-preference .inf-preference-right p {
+.wrapper-admin-child .inf-preference .inf-preference-left p,
+.wrapper-admin-child .inf-preference .inf-preference-right p {
   margin-bottom: 30px;
 }
 
@@ -239,21 +245,109 @@ body {
   border-color: #000;
 }
 
-.wrapper-preferences .list-preference nav ul {
+.wrapper-admin-child .list-preference nav ul {
   display: flex;
   justify-content: space-around;
 }
 
-.wrapper-preferences .list-preference nav a {
+.wrapper-admin-child .list-preference nav a {
   text-decoration: none;
   color: #000;
   font-size: 20px;
 }
 
-.wrapper-preferences .list-preference li {
+.wrapper-admin-child .list-preference li {
   list-style: none;
 }
 
-.wrapper-preferences .list-preference nav figure img {
+.wrapper-admin-child .list-preference nav figure img {
   border-radius: 100%;
+}
+
+.wrapper-admin-child .title-users {
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.wrapper-admin-child .users-list {
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+
+.wrapper-admin-child .users-list-item {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.wrapper-admin-child .users-list-item-main {
+  background: #ccc;
+}
+
+.wrapper-admin-child .users-list-item .user-list-categ {
+  border-right: 1px solid #000;
+}
+
+.wrapper-admin-child .row-users .users-list-item:nth-child(2n-1) {
+  background: #efefef;
+}
+
+.wrapper-admin-child .users-list-item .user-list-categ:last-child {
+  border-right: 0;
+}
+
+.wrapper-admin-child .users-list-item .users-list-check {
+  width: 3%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-name {
+  width: 18%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-address {
+  width: 18%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-nickname {
+  width: 9%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-email {
+  width: 15%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-roles {
+  width: 13%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-modules {
+  width: 10%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-customers {
+  width: 7%;
+}
+
+.wrapper-admin-child .users-list-item .users-list-created {
+  width: 7%;
+}
+
+.wrapper-admin-child .users-list-vehicle-group {
+  width: 20%;
+}
+
+.wrapper-admin-child .users-list-vehicle-customers {
+  width: 30%;
+}
+
+.wrapper-admin-child .users-list-vehicles {
+  width: 30%;
+}
+
+.wrapper-admin-child .users-list-vehicle-created {
+  width: 17%;
 }

@@ -13,8 +13,6 @@ import { ViewCustomersComponent } from './Administration/View-customers/view-cus
 import { ViewVehiclesComponent } from './Administration/View-vehicles/view-vehicles.component';
 import { ViewVehicleGroupsComponent } from './Administration/View-vehicle-groups/view-vehicle-groups.component';
 
-import { HeaderComponent } from './Header/header.component';
-
 const appRoutes: Routes = [
   {
     path: '',

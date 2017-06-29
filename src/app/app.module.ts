@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdInputModule, MdCardModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule } from '@angular/material';
+import { MdButtonModule, MdInputModule, MdCardModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule, MdCheckboxModule } from '@angular/material';
 
 
 // used to create fake backend
@@ -38,7 +38,7 @@ import { AppRoutingModule, routingComponents } from './app.routes';
                   AppRoutingModule,
                   FormsModule,
                   BrowserAnimationsModule,
-                  MdButtonModule, MdInputModule, MdCardModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule,
+                  MdButtonModule, MdInputModule, MdCardModule, MdToolbarModule, MdMenuModule, MdIconModule, MdSidenavModule, MdCheckboxModule,
                   HttpModule
                 ],
   declarations: [

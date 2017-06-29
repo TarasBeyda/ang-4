@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -9,5 +8,5 @@ import { Router } from '@angular/router';
 })
 
 export class ViewVehicleGroupsComponent {
-
+  checked = false;
 }
