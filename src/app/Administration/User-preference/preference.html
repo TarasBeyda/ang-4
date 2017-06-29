@@ -1,7 +1,11 @@
 <div class="wrapper-preferences">
   <div class="title-preference">
-    <h1>Hello Name</h1>
+    <h1 *ngFor="let user of users">Hello {{ user.lastName }}</h1>
     <img src="https://dummyimage.com/100x100/000/26bd3f" alt="">
+  </div>
+
+  <div class="hr-under-title-preference">
+    <hr>
   </div>
 
   <div class="inf-preference">
@@ -16,8 +20,19 @@
       <p>Auto logout time</p>
     </div>
     <div class="inf-preference-right">
-
+      <p>test@testing.com</p>
+      <p>Address1, Address2, Town, Country, Postcode</p>
+      <p>01723 333333</p>
+      <p>London, Lisbon - GMT +0</p>
+      <p>Litres</p>
+      <p>Miles</p>
+      <p>Display Fleet number</p>
+      <p>20 mins</p>
     </div>
+  </div>
+
+  <div class="hr-under-inf-preference">
+    <hr>
   </div>
 
   <div class="list-preference">

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -86,16 +90,92 @@ body {
   height: 100%;
   left: 0;
   top: 0;
+  display: flex;
 }
 
 .wrapper-administration .admin-navigation {
   width: 250px;
   border: 2px solid #000;
-  height: 99%;
+  height: 100%;
   float: left;
 }
 
 .wrapper-administration .admin-navigation .admin-navigation-block {
   border-bottom: 2px solid #000;
   padding-left: 15px;
+}
+
+.wrapper-admin-content {
+  width: 100%;
+}
+
+.wrapper-preferences {
+  border: 2px solid #000000;
+  border-left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.wrapper-preferences .title-preference {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 15px;
+}
+
+.wrapper-preferences .title-preference img {
+  border-radius: 100%;
+  margin-left: 50px;
+}
+
+.wrapper-preferences .inf-preference {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin: 10px 0 30px;
+}
+
+.wrapper-preferences .inf-preference .inf-preference-left {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.wrapper-preferences .inf-preference .inf-preference-right {
+  text-align: left;
+}
+
+.wrapper-preferences .inf-preference .inf-preference-left p,
+.wrapper-preferences .inf-preference .inf-preference-right p {
+  margin-bottom: 30px;
+}
+
+.hr-under-title-preference hr {
+  width: 95%;
+  border-color: #000;
+}
+
+.hr-under-inf-preference hr {
+  width: 80%;
+  border-color: #000;
+}
+
+.wrapper-preferences .list-preference nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper-preferences .list-preference nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.wrapper-preferences .list-preference li {
+  list-style: none;
+}
+
+.wrapper-preferences .list-preference nav figure img {
+  border-radius: 100%;
 }
