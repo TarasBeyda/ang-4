@@ -8,7 +8,7 @@ body {
 }
 
 .site-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -350,4 +350,79 @@ body {
 
 .wrapper-admin-child .users-list-vehicle-created {
   width: 17%;
+}
+
+.wrapper-admin-child .title-users {
+  position: relative;
+}
+
+.wrapper-admin-child .title-users .article-users {
+  position: absolute;
+  left: 30px;
+}
+
+.wrapper-admin-child .title-users .func-button-users {
+  position: absolute;
+  right: 30px;
+}
+
+.wrapper-admin-child .sidenav-user .mat-sidenav {
+  height: 100vh;
+  width: 350px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.wrapper-admin-child .sidenav-user .mat-sidenav-container {
+  overflow: inherit;
+}
+
+.wrapper-admin-child .sidenav-user .sidenav-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+  padding: 10px 3px;
+  align-items: center;
+}
+
+.wrapper-admin-child .sidenav-user .user-details-activity {
+  width: 90%;
+  margin: auto;
+}
+
+.wrapper-admin-child .sidenav-user .mat-tab-header {
+  border-bottom: 0;
+}
+
+.wrapper-admin-child .sidenav-user .mat-tab-header .mat-tab-label {
+  min-width: 140px;
+  width: 140px;
+  border-bottom: 2px solid rgba(0,0,0,.12);
+}
+
+.wrapper-admin-child .sidenav-user .mat-tab-header .mat-tab-label:first-child {
+  margin-right: 15px;
+}
+
+.wrapper-admin-child .sidenav-user .mat-tab-header .mat-tab-label:last-child {
+  margin-left: 15px;
+}
+
+.wrapper-admin-child .sidenav-user .mat-input-container,
+.wrapper-admin-child .sidenav-user .mat-select {
+  width: 100%;
+}
+
+.wrapper-admin-child .sidenav-user .user-details-activity {
+  text-align: left;
+}
+
+.wrapper-admin-child .sidenav-user .modules-checkbox label {
+  display: block;
+}
+
+.wrapper-admin-child .sidenav-user .details-update-user {
+  width: 100%;
+  text-align: center;
 }
