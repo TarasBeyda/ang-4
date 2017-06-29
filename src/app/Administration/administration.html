@@ -4,14 +4,14 @@
       <p>Admin Navigation</p>
     </div>
     <div class="admin-navigation-block">
-      <p>User Preferences</p>
-      <p>Change password</p>
+      <a [routerLink]="['user-preferences']">User Preferences</a>
+      <a [routerLink]="['change-password']">Change password</a>
     </div>
     <div class="admin-navigation-block">
-      <p>View users</p>
-      <p>View Customers</p>
-      <p>View vehicles</p>
-      <p>View vehicle groups</p>
+      <a [routerLink]="['view-users']">View users</a>
+      <a [routerLink]="['view-customers']">View Customers</a>
+      <a [routerLink]="['view-vehicles']">View vehicles</a>
+      <a [routerLink]="['view-vehicle-groups']">View vehicle groups</a>
     </div>
     <div class="admin-navigation-block">
       <p>Log out</p>

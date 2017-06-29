@@ -19,13 +19,18 @@ import { AuthenticationService, UserService } from './_services/index';
 import { APP_CONFIG, AppConfig } from './app.config';
 
 import { AppComponent }  from './app.component';
-import { LoginComponent } from './Login/login.component'
-import { HomeComponent } from './Home/home.component'
-import { HeaderComponent } from './Header/header.component'
-import { AdministrationComponent } from './Administration/administration.component'
-import { PreferenceComponent } from './Administration/User-preference/preference.component'
+import { LoginComponent } from './Login/login.component';
+import { HomeComponent } from './Home/home.component';
+import { HeaderComponent } from './Header/header.component';
+import { AdministrationComponent } from './Administration/administration.component';
+import { PreferenceComponent } from './Administration/User-preference/preference.component';
+import { ChangePasswordComponent } from './Administration/Change-password/change-password.component';
+import { ViewUsersComponent } from './Administration/View-users/view-users.component';
+import { ViewCustomersComponent } from './Administration/View-customers/view-customers.component';
+import { ViewVehiclesComponent } from './Administration/View-vehicles/view-vehicles.component';
+import { ViewVehicleGroupsComponent } from './Administration/View-vehicle-groups/view-vehicle-groups.component';
 
-import { AppRoutingModule, routingComponents } from './app.routes'
+import { AppRoutingModule, routingComponents } from './app.routes';
 
 @NgModule({
   imports:      [
@@ -41,7 +46,7 @@ import { AppRoutingModule, routingComponents } from './app.routes'
                   LoginComponent,
                   HomeComponent,
                   HeaderComponent,
-                  AdministrationComponent, PreferenceComponent,
+                  AdministrationComponent, PreferenceComponent, ChangePasswordComponent, ViewUsersComponent, ViewCustomersComponent, ViewVehiclesComponent, ViewVehicleGroupsComponent,
                   routingComponents
                 ],
   bootstrap:    [ AppComponent ],
