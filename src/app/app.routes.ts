@@ -35,12 +35,12 @@ const appRoutes: Routes = [
     component: AdministrationComponent,
     children: [
       { path: '', redirectTo: 'user-preferences', pathMatch: 'full'},
-      { path: 'user-preferences', component: PreferenceComponent },
-      { path: 'change-password', component: ChangePasswordComponent },
-      { path: 'view-users', component: ViewUsersComponent },
-      { path: 'view-customers', component: ViewCustomersComponent },
-      { path: 'view-vehicles', component: ViewVehiclesComponent },
-      { path: 'view-vehicle-groups', component: ViewVehicleGroupsComponent },
+      { path: 'user-preferences', component: PreferenceComponent, canActivate: [AuthGuard] },
+      { path: 'change-password', component: ChangePasswordComponent, canActivate: [AuthGuard] },
+      { path: 'view-users', component: ViewUsersComponent, canActivate: [AuthGuard] },
+      { path: 'view-customers', component: ViewCustomersComponent, canActivate: [AuthGuard] },
+      { path: 'view-vehicles', component: ViewVehiclesComponent, canActivate: [AuthGuard] },
+      { path: 'view-vehicle-groups', component: ViewVehicleGroupsComponent, canActivate: [AuthGuard] },
     ],
     canActivate: [AuthGuard]
   },

@@ -1,14 +1,50 @@
 <header class="site-header">
+  <md-sidenav-container >
+    <md-sidenav align="end" #sidenav mode="side" class="md-sidenav">
+      <p>Modules Menu</p>
+      <md-nav-list class="md-nav-list">
+        <li>
+          <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
+          <a md-list-item href="">Track</a>
+        </li>
+        <li>
+          <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
+          <a md-list-item href="">Trace</a>
+        </li>
+        <li>
+          <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
+          <a md-list-item href="">Geofence</a>
+        </li>
+        <li>
+          <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
+          <a md-list-item href="">Trips/Stops</a>
+        </li>
+        <li>
+          <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
+          <a md-list-item href="">Text</a>
+        </li>
+        <li>
+          <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
+          <a md-list-item href="">Timesheets with edit</a>
+        </li>
+      </md-nav-list>
 
-  <md-toolbar>
-    <span>MyCompany</span>
-    <span class="example-spacer"></span>
-    <button md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon></button>
-  </md-toolbar>
+      <div class="sidenav-admin">
+        <div class="hr-under-sidenav">
+          <hr>
+        </div>
+        <div class="sidenav-admin-item">
+          <figure><img src="https://dummyimage.com/125x125/000/fff" alt=""></figure>
+          <a href="/administration">Administration</a>
+        </div>
+      </div>
 
-  <md-menu #appMenu="mdMenu">
-    <button md-menu-item> Settings </button>
-    <button md-menu-item> Help </button>
-  </md-menu>
-
+    </md-sidenav>
+    <md-toolbar color="primary">
+      <img src="https://dummyimage.com/140x58/000/26bd3f" class="logo" alt="logo">
+      <button md-icon-button (click)="sidenav.toggle()">
+        <md-icon class="md-24" >menu</md-icon>
+      </button>
+    </md-toolbar>
+  </md-sidenav-container>
 </header>

@@ -1,9 +1,71 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, 'sans-serif';
 }
 
 body {
   overflow-x: hidden;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.site-header .logo {
+  position: absolute;
+  left: 27px;
+}
+
+.site-header .mat-sidenav-container {
+  overflow: inherit;
+}
+
+.mat-toolbar .mat-toolbar-row {
+  justify-content: flex-end;
+}
+
+.site-header .mat-sidenav {
+  width: 365px;
+  height: 100vh;
+  background: #57565B;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.site-header .md-nav-list {
+  display: flex;
+  width: 365px;
+  flex-wrap: wrap;
+}
+
+.site-header li {
+  list-style: none;
+}
+
+.site-header figure img {
+  border-radius: 100%;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: #fff;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.site-header .hr-under-sidenav hr {
+  width: 90%;
+  border-color: #000;
+}
+
+.site-header .sidenav-admin-item {
+
 }
 
 .wrapper-login {
@@ -103,13 +165,22 @@ body {
 .wrapper-administration .admin-navigation-block a {
   text-decoration: none;
   color: #000;
-  margin: 16px 0;
+  margin: 0;
   display: block;
+  padding: 10px 0 10px 15px;
+}
+
+.wrapper-administration .admin-navigation-block a:hover {
+  background: #94BCF0;
+}
+
+.wrapper-administration .admin-navigation-block p {
+  margin: 0;
+  padding: 10px 0 10px 15px;
 }
 
 .wrapper-administration .admin-navigation .admin-navigation-block {
   border-bottom: 2px solid #000;
-  padding-left: 15px;
 }
 
 .wrapper-admin-content {
