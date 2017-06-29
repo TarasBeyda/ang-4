@@ -6,7 +6,7 @@ import { LoginComponent } from './Login/login.component';
 import { HomeComponent } from './Home/home.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { AdministrationComponent } from './Administration/administration.component'
-import { PreferenceComponent } from './Administration/preference.component'
+import { PreferenceComponent } from './Administration/User-preference/preference.component'
 
 import { HeaderComponent } from './Header/header.component';
 

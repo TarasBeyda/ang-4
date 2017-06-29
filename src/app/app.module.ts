@@ -23,7 +23,7 @@ import { LoginComponent } from './Login/login.component'
 import { HomeComponent } from './Home/home.component'
 import { HeaderComponent } from './Header/header.component'
 import { AdministrationComponent } from './Administration/administration.component'
-import { PreferenceComponent } from './Administration/preference.component'
+import { PreferenceComponent } from './Administration/User-preference/preference.component'
 
 import { AppRoutingModule, routingComponents } from './app.routes'
 
