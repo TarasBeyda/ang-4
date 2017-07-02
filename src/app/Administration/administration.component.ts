@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
 })
 
 export class AdministrationComponent {
+  constructor(public _router: Router) {}
 
+  getClassActive(path: any) {
+    return (this._router.url === path) ? 'active' : '';
+  }
 }

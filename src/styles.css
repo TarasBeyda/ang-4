@@ -20,6 +20,23 @@ body {
   left: 27px;
 }
 
+.mat-toolbar.mat-primary {
+  background: white;
+}
+
+.mat-toolbar .mat-icon-button {
+  border-radius: 0;
+  margin-right: 12px;
+}
+
+.mat-toolbar .mat-icon-button md-icon {
+  font-size: 40px;
+}
+
+.mat-toolbar .mat-button-wrapper {
+  color: #000;
+}
+
 .site-header .mat-sidenav-container {
   overflow: inherit;
 }
@@ -35,6 +52,10 @@ body {
   text-align: center;
   color: #fff;
   font-size: 20px;
+}
+
+.site-header .mat-sidenav-content {
+  border: 2px solid #000;
 }
 
 .site-header .md-nav-list {
@@ -75,7 +96,6 @@ body {
 }
 
 .wrapper-login {
-  background: #945699;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +116,9 @@ body {
 }
 
 .wrapper-home {
-  background: #945699;
+  background:
+    linear-gradient(to left top, rgba(69, 40, 77, 1) 0%, rgba(129, 73, 134, 1) 50%, rgba(196, 100, 109, 1) 100%),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
   color: #fff;
   position: absolute;
   left: 0;
@@ -179,6 +201,10 @@ body {
   background: #94BCF0;
 }
 
+.wrapper-administration .admin-navigation-block a.active {
+  background: #94BCF0;
+}
+
 .wrapper-administration .admin-navigation-block p {
   margin: 0;
   padding: 10px 0 10px 15px;
@@ -211,6 +237,7 @@ body {
 .wrapper-admin-child .title-preference img {
   border-radius: 100%;
   margin-left: 50px;
+  margin-right: 50px;
 }
 
 .wrapper-admin-child .inf-preference {
@@ -435,6 +462,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  max-width: 580px;
 }
 
 .wrapper-change-password .mat-card md-input-container {
