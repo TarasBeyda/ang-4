@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 
 export class ViewVehicleGroupsComponent {
   checked = false;
+
+  roles = [
+    {value: 'role-1', viewValue: 'Role 1'},
+    {value: 'role-2', viewValue: 'Role 2'},
+    {value: 'role-3', viewValue: 'Role 3'}
+  ];
 }

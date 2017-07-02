@@ -155,7 +155,7 @@ body {
 .wrapper-administration {
   position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: calc(100% - 64px);
   left: 0;
   top: 64px;
   display: flex;
@@ -164,7 +164,6 @@ body {
 .wrapper-administration .admin-navigation {
   width: 250px;
   border: 2px solid #000;
-  height: 100%;
   float: left;
 }
 
@@ -276,6 +275,8 @@ body {
   display: flex;
   flex-direction: column;
   word-break: break-word;
+  height: calc(100vh - 144px);
+  overflow-y: auto;
 }
 
 .wrapper-admin-child .users-list-item {
@@ -286,6 +287,8 @@ body {
 
 .wrapper-admin-child .users-list-item-main {
   background: #ccc;
+  min-height: 52px;
+  cursor: default;
 }
 
 .wrapper-admin-child .users-list-item .user-list-categ {
@@ -367,7 +370,7 @@ body {
 }
 
 .wrapper-admin-child .sidenav-user .mat-sidenav {
-  height: 100vh;
+  height: calc(100vh - 67px);
   width: 350px;
   border-left: 2px solid #000;
   border-bottom: 2px solid #000;
