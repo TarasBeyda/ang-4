@@ -429,3 +429,15 @@ body {
   width: 100%;
   text-align: center;
 }
+
+.wrapper-change-password .mat-card {
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper-change-password .mat-card md-input-container {
+  width: 100%;
+  max-width: 450px;
+}
