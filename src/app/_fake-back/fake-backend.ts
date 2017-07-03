@@ -7,7 +7,7 @@ export let fakeBackendProvider = {
   useFactory: (backend: MockBackend, options: BaseRequestOptions) => {
     // configure fake backend
     backend.connections.subscribe((connection: MockConnection) => {
-      let testUser = { username: 'test', password: 'test', firstName: 'Test', lastName: 'User' };
+      let testUser = { email: 'test@test.com', password: 'test', firstName: 'Rick'};
 
       // wrap in timeout to simulate server api call
       setTimeout(() => {
@@ -18,7 +18,7 @@ export let fakeBackendProvider = {
           let params = JSON.parse(connection.request.getBody());
 
           // check user credentials and return fake jwt token if valid
-          if (params.username === testUser.username && params.password === testUser.password) {
+          if (params.email === testUser.email && params.password === testUser.password) {
             connection.mockRespond(new Response(
               new ResponseOptions({ status: 200, body: { token: 'fake-jwt-token' } })
             ));

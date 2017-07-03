@@ -29,6 +29,7 @@ import { ViewUsersComponent } from './Administration/View-users/view-users.compo
 import { ViewCustomersComponent } from './Administration/View-customers/view-customers.component';
 import { ViewVehiclesComponent } from './Administration/View-vehicles/view-vehicles.component';
 import { ViewVehicleGroupsComponent } from './Administration/View-vehicle-groups/view-vehicle-groups.component';
+import { ForgotPasswordComponent } from './Forgot-password/forgot-password.component';
 
 import { AppRoutingModule, routingComponents } from './app.routes';
 
@@ -47,6 +48,7 @@ import { AppRoutingModule, routingComponents } from './app.routes';
                   HomeComponent,
                   HeaderComponent,
                   AdministrationComponent, PreferenceComponent, ChangePasswordComponent, ViewUsersComponent, ViewCustomersComponent, ViewVehiclesComponent, ViewVehicleGroupsComponent,
+                  ForgotPasswordComponent,
                   routingComponents
                 ],
   bootstrap:    [ AppComponent ],

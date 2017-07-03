@@ -12,11 +12,12 @@ import { ViewUsersComponent } from './Administration/View-users/view-users.compo
 import { ViewCustomersComponent } from './Administration/View-customers/view-customers.component';
 import { ViewVehiclesComponent } from './Administration/View-vehicles/view-vehicles.component';
 import { ViewVehicleGroupsComponent } from './Administration/View-vehicle-groups/view-vehicle-groups.component';
+import { ForgotPasswordComponent } from './Forgot-password/forgot-password.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
@@ -29,16 +30,20 @@ const appRoutes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: 'forgot-password',
+    component: ForgotPasswordComponent,
+  },
+  {
     path: 'administration',
     component: AdministrationComponent,
     children: [
       { path: '', redirectTo: 'user-preferences', pathMatch: 'full'},
-      { path: 'user-preferences', component: PreferenceComponent, canActivate: [AuthGuard] },
-      { path: 'change-password', component: ChangePasswordComponent, canActivate: [AuthGuard] },
-      { path: 'view-users', component: ViewUsersComponent, canActivate: [AuthGuard] },
-      { path: 'view-customers', component: ViewCustomersComponent, canActivate: [AuthGuard] },
-      { path: 'view-vehicles', component: ViewVehiclesComponent, canActivate: [AuthGuard] },
-      { path: 'view-vehicle-groups', component: ViewVehicleGroupsComponent, canActivate: [AuthGuard] },
+      { path: 'user-preferences', component: PreferenceComponent },
+      { path: 'change-password', component: ChangePasswordComponent },
+      { path: 'view-users', component: ViewUsersComponent },
+      { path: 'view-customers', component: ViewCustomersComponent },
+      { path: 'view-vehicles', component: ViewVehiclesComponent },
+      { path: 'view-vehicle-groups', component: ViewVehicleGroupsComponent },
     ],
     canActivate: [AuthGuard]
   },

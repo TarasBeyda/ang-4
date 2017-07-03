@@ -3,27 +3,27 @@
     <md-sidenav align="end" #sidenav mode="side" class="md-sidenav">
       <p>Modules Menu</p>
       <md-nav-list class="md-nav-list">
-        <li>
+        <li (click)="sidenav.close()">
           <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
           <a md-list-item href="">Track</a>
         </li>
-        <li>
+        <li (click)="sidenav.close()">
           <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
           <a md-list-item href="">Trace</a>
         </li>
-        <li>
+        <li (click)="sidenav.close()">
           <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
           <a md-list-item href="">Geofence</a>
         </li>
-        <li>
+        <li (click)="sidenav.close()">
           <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
           <a md-list-item href="">Trips/Stops</a>
         </li>
-        <li>
+        <li (click)="sidenav.close()">
           <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
           <a md-list-item href="">Text</a>
         </li>
-        <li>
+        <li (click)="sidenav.close()">
           <figure><img src="https://dummyimage.com/100x100/000/fff" alt=""></figure>
           <a md-list-item href="">Timesheets with edit</a>
         </li>
@@ -33,9 +33,9 @@
         <div class="hr-under-sidenav">
           <hr>
         </div>
-        <div class="sidenav-admin-item">
+        <div class="sidenav-admin-item" (click)="sidenav.close()">
           <figure><img src="https://dummyimage.com/125x125/000/fff" alt=""></figure>
-          <a href="/administration">Administration</a>
+          <a [routerLink]="['/administration']">Administration</a>
         </div>
       </div>
 
