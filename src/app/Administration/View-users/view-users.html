@@ -6,7 +6,7 @@
           <button md-icon-button (click)="sidenavUsers.close()">
             <md-icon class="md-24" >close</md-icon>
           </button>
-          <p>*User Name* Details</p>
+          <p>{{ selectedUser.userName }} Details</p>
           <button md-icon-button>
             <md-icon class="md-24" >edit</md-icon>
           </button>
@@ -107,123 +107,33 @@
     </div>
 
     <div class="row-users">
-      <div class="users-list-item" (click)="sidenavUsers.open()">
+      <div class="users-list-item" (click)="sidenavUsers.open(); selectUser(user)" *ngFor="let user of users">
         <div class="user-list-categ users-list-check">
           <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
         </div>
         <div class="user-list-categ users-list-name">
-          <p>Valeria Liberty</p>
+          <p>{{ user.userName }}</p>
         </div>
         <div class="user-list-categ users-list-address">
-          <p>Address1, Address2, Town, Country, Postcode</p>
+          <p>{{ user.address }}</p>
         </div>
         <div class="user-list-categ users-list-nickname">
-          <p>Peldi</p>
+          <p>{{ user.nickName }}</p>
         </div>
         <div class="user-list-categ users-list-email">
-          <p>test@testing.com</p>
+          <p>{{ user.email }}</p>
         </div>
         <div class="user-list-categ users-list-roles">
-          <p>Admin</p>
+          <p>{{ user.roles }}</p>
         </div>
         <div class="user-list-categ users-list-modules">
-          <p>Track/Trace</p>
+          <p>{{ user.modules }}</p>
         </div>
         <div class="user-list-categ users-list-customers">
-          <p>4</p>
+          <p>{{ user.customers }}</p>
         </div>
         <div class="user-list-categ users-list-created">
-          <p>15/01/17</p>
-        </div>
-      </div>
-
-      <div class="users-list-item" (click)="sidenavUsers.open()">
-        <div class="user-list-categ users-list-check">
-          <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
-        </div>
-        <div class="user-list-categ users-list-name">
-          <p>Valeria Liberty</p>
-        </div>
-        <div class="user-list-categ users-list-address">
-          <p>Address1, Address2, Town, Country, Postcode</p>
-        </div>
-        <div class="user-list-categ users-list-nickname">
-          <p>Peldi</p>
-        </div>
-        <div class="user-list-categ users-list-email">
-          <p>test@testing.com</p>
-        </div>
-        <div class="user-list-categ users-list-roles">
-          <p>Admin</p>
-        </div>
-        <div class="user-list-categ users-list-modules">
-          <p>Track/Trace</p>
-        </div>
-        <div class="user-list-categ users-list-customers">
-          <p>4</p>
-        </div>
-        <div class="user-list-categ users-list-created">
-          <p>15/01/17</p>
-        </div>
-      </div>
-
-      <div class="users-list-item" (click)="sidenavUsers.open()">
-        <div class="user-list-categ users-list-check">
-          <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
-        </div>
-        <div class="user-list-categ users-list-name">
-          <p>Valeria Liberty</p>
-        </div>
-        <div class="user-list-categ users-list-address">
-          <p>Address1, Address2, Town, Country, Postcode</p>
-        </div>
-        <div class="user-list-categ users-list-nickname">
-          <p>Peldi</p>
-        </div>
-        <div class="user-list-categ users-list-email">
-          <p>test@testing.com</p>
-        </div>
-        <div class="user-list-categ users-list-roles">
-          <p>Admin</p>
-        </div>
-        <div class="user-list-categ users-list-modules">
-          <p>Track/Trace</p>
-        </div>
-        <div class="user-list-categ users-list-customers">
-          <p>4</p>
-        </div>
-        <div class="user-list-categ users-list-created">
-          <p>15/01/17</p>
-        </div>
-      </div>
-
-      <div class="users-list-item" (click)="sidenavUsers.open()">
-        <div class="user-list-categ users-list-check">
-          <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
-        </div>
-        <div class="user-list-categ users-list-name">
-          <p>Valeria Liberty</p>
-        </div>
-        <div class="user-list-categ users-list-address">
-          <p>Address1, Address2, Town, Country, Postcode</p>
-        </div>
-        <div class="user-list-categ users-list-nickname">
-          <p>Peldi</p>
-        </div>
-        <div class="user-list-categ users-list-email">
-          <p>test@testing.com</p>
-        </div>
-        <div class="user-list-categ users-list-roles">
-          <p>Admin</p>
-        </div>
-        <div class="user-list-categ users-list-modules">
-          <p>Track/Trace</p>
-        </div>
-        <div class="user-list-categ users-list-customers">
-          <p>4</p>
-        </div>
-        <div class="user-list-categ users-list-created">
-          <p>15/01/17</p>
+          <p>{{ user.created }}</p>
         </div>
       </div>
     </div>

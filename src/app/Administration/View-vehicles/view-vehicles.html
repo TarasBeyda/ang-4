@@ -6,7 +6,7 @@
           <button md-icon-button (click)="sidenavUsers.close()">
             <md-icon class="md-24" >close</md-icon>
           </button>
-          <p>Vehicle Name</p>
+          <p>{{ selectedUser.vehicleName }}</p>
           <button md-icon-button>
             <md-icon class="md-24" >edit</md-icon>
           </button>
@@ -73,80 +73,26 @@
         <p>Vehicles</p>
       </div>
       <div class="user-list-categ users-list-vehicle-created">
-        <p>Vehicle</p>
+        <p>Created</p>
       </div>
     </div>
 
     <div class="row-users">
-      <div class="users-list-item" (click)="sidenavUsers.open()">
+      <div class="users-list-item" (click)="sidenavUsers.open(); selectUser(user)" *ngFor="let user of users">
         <div class="user-list-categ users-list-check">
           <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
         </div>
         <div class="user-list-categ users-list-vehicle-group">
-          <p>Narth vans</p>
+          <p>{{ user.vehicleName }}</p>
         </div>
         <div class="user-list-categ users-list-vehicle-customers">
-          <p>Cust 1, Cust 2</p>
+          <p>{{ user.customers }}</p>
         </div>
         <div class="user-list-categ users-list-vehicles">
-          <p>RH66 ONB, KU66 YJY</p>
+          <p>{{ user.vehicles }}</p>
         </div>
         <div class="user-list-categ users-list-vehicle-created">
-          <p>12/01/17</p>
-        </div>
-      </div>
-
-      <div class="users-list-item" (click)="sidenavUsers.open()">
-        <div class="user-list-categ users-list-check">
-          <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-group">
-          <p>Narth vans</p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-customers">
-          <p>Cust 1, Cust 2</p>
-        </div>
-        <div class="user-list-categ users-list-vehicles">
-          <p>RH66 ONB, KU66 YJY</p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-created">
-          <p>12/01/17</p>
-        </div>
-      </div>
-
-      <div class="users-list-item" (click)="sidenavUsers.open()">
-        <div class="user-list-categ users-list-check">
-          <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-group">
-          <p>Narth vans</p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-customers">
-          <p>Cust 1, Cust 2</p>
-        </div>
-        <div class="user-list-categ users-list-vehicles">
-          <p>RH66 ONB, KU66 YJY</p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-created">
-          <p>12/01/17</p>
-        </div>
-      </div>
-
-      <div class="users-list-item" (click)="sidenavUsers.open()">
-        <div class="user-list-categ users-list-check">
-          <p><md-checkbox class="example-margin" [(ngModel)]="checked"></md-checkbox></p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-group">
-          <p>Narth vans</p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-customers">
-          <p>Cust 1, Cust 2</p>
-        </div>
-        <div class="user-list-categ users-list-vehicles">
-          <p>RH66 ONB, KU66 YJY</p>
-        </div>
-        <div class="user-list-categ users-list-vehicle-created">
-          <p>12/01/17</p>
+          <p>{{ user.created }}</p>
         </div>
       </div>
     </div>
